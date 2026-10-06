@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  sdpap-kernel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sdpap_v3_kernel_node
+    restart: unless-stopped
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - sdpap_v3_ledger_data:/app/data
+    environment:
+      - SDPAP_DB_PATH=/app/data/sdpap_kernel.db
+
+volumes:
+  sdpap_v3_ledger_data:
+    driver: local
