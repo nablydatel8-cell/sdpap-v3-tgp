@@ -1,4 +1,4 @@
-YAML
+
 name: SDPAP V3 Verify
 
 on: [push, pull_request]
