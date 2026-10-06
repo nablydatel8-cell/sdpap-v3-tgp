@@ -1,0 +1,20 @@
+YAML
+name: SDPAP V3 Verify
+
+on: [push, pull_request]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt || true
+      - run: python test_suite_full.py
+      - run: >
+          python sdpap_v3_production.py verify 
+          --merkle 138f68e670011a011ae22aeb09ab5476d7729cb7cc6ecd633cd633482e9fe6b2e321ec1f2 
+          --hash cd36560d482e9fe6b2e321ec1f2 
+          --hash cd36560d
