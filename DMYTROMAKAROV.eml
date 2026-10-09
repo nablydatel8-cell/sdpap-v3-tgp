@@ -1,0 +1,161 @@
+Delivered-To: nablydatel8@gmail.com
+Received: by 2002:a05:6358:5b10:b0:2ba:3707:7b08 with SMTP id h16csp2597135rwf;
+        Thu, 8 Oct 2026 20:26:07 -0700 (PDT)
+X-Received: by 2002:a05:690c:6893:b0:873:5c7b:c13a with SMTP id 00721157ae682-8b07d4a2370mr3839277b3.34.1791516367535;
+        Thu, 08 Oct 2026 20:26:07 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1791516367; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=fotg+XdSMSr3hMOdIxvSNdXhMGQ0GnQn+RZYcfhCfatE1n9nEQPrL/EJsZLBv74u1s
+         Pgop/Ao7kkKqhVYx6bO4+IHFMDn6E0V/3HPKUQgPl7udxkeYwwA0MFdXctAlNiIudQ9O
+         FSR6Ft2XJ2Yz98L4eeI4+a3PW569i4Vva1+p4PmmAcF+RpixW7rEfMtNNdlhU06LrM3J
+         4xzlm3GS41Gr6eWJww0QpFPY0Z9IqoSNmcjKBL3y5GvaDp6i0F+A0gRNRXkilTEJKQxk
+         mDC/Dg1UoWxe9M4KsJRQVQcRcwd7RCAb6UEDe5nsVB5G8MTLCR51vegISOrCl6Y3EGkW
+         csHA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=xPe0okl4DL06LVKinqeyH9U/vyv3qotuivykBSZftg8=;
+        fh=m38Cd57v1vlyanthnHSEQyUG2P/aPQGTN4BH6hlLoOQ=;
+        b=bo70eoT+CqSbT4sGDS1qbP9H4Fh68ylKUXSKxbAQp7cLiLLnC+mDPIlRJb6YdX5kM+
+         oMHuH9MP9pCJTYoP3pqc0n6k8y3VH+gK4SAjLheFvk18CDgFBXfbUTkRURWyHHOg77nX
+         0jipNSZP4xxPiBPPY/mil2824uoH8D39ErWjZVMr0BNMLS55jmTGWiPlwgVCu39xFsPB
+         EiYRnzn6a5QXt6hKFv4na45cQhXSAwbrtPpfS6McUMzJiRPGJzR/cDt4GsqcA86UqTqy
+         4ccJjqV0GVOPchgZPF/z9yEjsqqvzkBxD1hPR4LuEl+LsVi7Rd4z6ompYdB28BG85hxD
+         h2Ng==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=hjF4kGOG;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of dmitrimakarov1305@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=dmitrimakarov1305@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <dmitrimakarov1305@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-8b07f0dc9d6sor3779277b3.0.2026.10.08.20.26.07
+        for <nablydatel8@gmail.com>
+        (Google Transport Security);
+        Thu, 08 Oct 2026 20:26:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of dmitrimakarov1305@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=hjF4kGOG;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of dmitrimakarov1305@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=dmitrimakarov1305@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1791516367; cv=none;
+        d=google.com; s=arc-20260327;
+        b=DYuktzMC8CYQs4ynDqGKp5F7xgqkmDsZBUVDAk83A2XLEHstPjL9DgqrtHxYeOCYjD
+         9FfV73iYQ1IWYxQP67TCAOOBy7tUtwy8YHw9p+AOsadQnGYWtUf45kLPnLWmcz/9vYyd
+         2GVcksk1GTJntEHL9iPnOYNuACyaicW2w1c+WaOfCncvH7StanUXNBp1pJRvxhkbu7NN
+         ZL+nIIYE3pwhV9ej9g5UPLk3KZqmCJ6GrUeF2Xl+dj55WyJO5txjzs7OjuW8TifYMILL
+         1FRNdbeD6tVi/oyOoxrWCBThqYo77K0nhdT3i23WwGrjghh7uoOJXipTVmb7YoXZF/Sw
+         HaLA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=xPe0okl4DL06LVKinqeyH9U/vyv3qotuivykBSZftg8=;
+        fh=m38Cd57v1vlyanthnHSEQyUG2P/aPQGTN4BH6hlLoOQ=;
+        b=s+5j8eQvu0gHr89Mp1II21ePemEdagRtABwM94d1kuyKhu5nhJQ4tCM1F92Cdm8/3a
+         Ixog1MxLDw+VaZ/ORcO0uRX3K+DrQC+ZMkhc3N809F4gpArOkuzvX96OCnw2wpDzpC/v
+         ruBkM9amml1vaZHf+VlT6mGPtHGIkmdwOzQOZd7xD1G3JeL55Isd0mReFhEZUlSQJwo0
+         GV9jcRtw8841ZMWYTyYyXeTH6cp2lHNXQ7RslQ0MKU7HX1IRUoSbYhTL+MtBJfxICVL2
+         r9ONLTF8BET8DHSi5jXM7hmScse2K+Dc8TAiTNOXYHwWi/YeI8sLFGzi12I7xisKi9we
+         SlyA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1791516367; x=1792121167; dara=google.com;
+        h=content-type:to:subject:message-id:date:from:mime-version:from:to
+         :cc:subject:date:message-id:reply-to:content-type;
+        bh=xPe0okl4DL06LVKinqeyH9U/vyv3qotuivykBSZftg8=;
+        b=hjF4kGOGt3L9O+0g957TZWmtO92jO5I0/gszXxP0ZG4vJ3uwjboGThbD1LLRcn7sZ+
+         3xwrydKs9DP+WUhtGUM94zijVCjqFs3A53aP1CkI1M+Fq0NGllNpJv3Hh9LbB5r2+5CG
+         p2LV3mS6INAHHS5Lbu1NCTj88kC20lYF7L9Y+cdo57pS/iuImKaCIcrhwZ7L0IIo9BNs
+         j7GSb3WiMdcyA8qD7u49Ld77Gl2ZMHdjSdGXwcGd0TYZMHWsaeRIMtyEjC/c8HUgn6N8
+         ToDMfXb+Qn4mp24p+6VQ/Tz1taRI2C19fYxUViyb9QxxPoqIczcaVTbP7tlJU+JOkjjT
+         /gMg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20260707; t=1791516367; x=1792121167;
+        h=content-type:to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=xPe0okl4DL06LVKinqeyH9U/vyv3qotuivykBSZftg8=;
+        b=qsl7X6wC7o1KaMgGnFOLTlBbBc5dopZiWGxKU3ya+nIy6ByVvrH1LGAoqBWOpEWdDr
+         MlP3K+p/UbgCbEml97wwoiTsH36FPHDPb8r43G9cLlicpZpOjJhJsN5tEYH0Kzn8CA3L
+         1izH++ZTgSD0xIcbkT0RoJhbvWBnVhM+wEBdBRtrIpKtNC/hX1wMVqKWmMANJdL7jjvX
+         VHvLgSIL1EPwhqoxl9fTHACqCCm74lY4x61lBkY2VL+4dq9KLsbRU/IuV6EWUFxJbs0f
+         u7JlHJ2e4cKQcRLi80hk11vJBLxKZfxNWtIWQb6SgjpviR1eXYvx+qXrj7qZSNHdrwCm
+         0d5w==
+X-Gm-Message-State: AFq9FYKB0NDWisaMOl/Oi2mxO0H2g4oTtDtmBydeMV6+zJ6Hm4vKukFb
+	nMBmtW72lK4d2GEaxSE/uWVlZ9QphHn079ql58xxgxIfD7/UWrmzGKynUkik8fVfnRP//fuPxSi
+	7NmGDd1eHxfjGgEcvSY4CnSNou/4tKAep9vV1om7QWA==
+X-Gm-Gg: AYBFou2gHWBSGndjTzcuEdv6gPerPNDjIWJxKBtGAC8Lg3Uz8606VCedFzvaBSxN3+2
+	dsUlE4CI3i4sRynEt4bSwO711Xw9DoDxmkO+hXU+0BG64ApDJhkOltoVgsPuAUCSs/quUfA77ga
+	3pvL48Uo5yOgsYNdTNRecLXJ2N7AHX/t40r7zss6aXUYQyRMrMR3fqyL2UAffLd9hJULPFBW5kJ
+	obMEDGAwXxsPXBW8HJInZcJftqdXlCYBLMbhSl4s0SIvCx8dLk1zj1Ge3vnROkbL/szHmI66YyN
+	iaqloVbQEIFTqmYF0iwmVudh4shkDvvDxJ3Zho+wspbtZdVPo5Fny7dtgj1YccocHZrw1T9jzaA
+	tTLCliyFhz3dSVGAp1+c8R+0R
+X-Received: by 2002:a05:690c:c4fa:b0:81e:fdf7:bfbd with SMTP id
+ 00721157ae682-8b07d3f34bcmr3278867b3.15.1791516367178; Thu, 08 Oct 2026
+ 20:26:07 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a05:7010:33c6:b0:54d:f762:679e with HTTP; Thu, 8 Oct 2026
+ 20:26:06 -0700 (PDT)
+From: =?UTF-8?B?0JTQvNC40YLRgNC40Lkg0JzQsNC60LDRgNC+0LI=?= <dmitrimakarov1305@gmail.com>
+Date: Thu, 8 Oct 2026 20:26:06 -0700
+X-Gm-Features: AclHuK_aDBxduq4LXv2ORrnM1VMkkNbuXgTaASVjFgBYWgl9Ug86dH4UuMCgjaQ
+Message-ID: <CAM0o817_KB6Gx2_M_QrJ0tGJYZ+ctDkta6kT-LcT09VGWD3DFA@mail.gmail.com>
+Subject: DMYTROMAKAROV
+To: Nablydatel <nablydatel8@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000acd19c065d5fe877"
+
+--000000000000acd19c065d5fe877
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+RE: DMYTRO MAKAROV =E2=80=93 URGENT DEMAND FOR PROTECTION OF LIFE AND PROHI=
+BITION
+OF HARM
+
+To the administration of [NAME OF FACILITY]
+
+You are holding Dmytro Makarov. He suffers from severe, officially
+documented epilepsy and requires constant medical supervision.
+
+Since he was taken into your custody he has lost all communication. This is
+documented.
+
+I hereby formally demand:
+1. Do not cause him any harm, directly or indirectly.
+2. Ensure immediate medical protection and prevention of epileptic seizure.
+3. Immediately confirm that he is alive, his exact location and his state
+of health.
+4. Restore communication without delay.
+
+If he is still alive, any harm, denial of medical aid or continued
+isolation will be treated as intentional and will be fully documented for
+criminal and international legal proceedings.
+
+Confirmation of life and safety is required immediately.
+
+Date: 09.09.2026
+
+--000000000000acd19c065d5fe877
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div>RE: DMYTRO MAKAROV =E2=80=93 URGENT DEMAND FOR PROTECTION OF LIFE AND =
+PROHIBITION OF HARM</div><div><br></div><div>To the administration of [NAME=
+ OF FACILITY]</div><div><br></div><div>You are holding Dmytro Makarov. He s=
+uffers from severe, officially documented epilepsy and requires constant me=
+dical supervision.</div><div><br></div><div>Since he was taken into your cu=
+stody he has lost all communication. This is documented.</div><div><br></di=
+v><div>I hereby formally demand:</div><div>1. Do not cause him any harm, di=
+rectly or indirectly.</div><div>2. Ensure immediate medical protection and =
+prevention of epileptic seizure.</div><div>3. Immediately confirm that he i=
+s alive, his exact location and his state of health.</div><div>4. Restore c=
+ommunication without delay.</div><div><br></div><div>If he is still alive, =
+any harm, denial of medical aid or continued isolation will be treated as i=
+ntentional and will be fully documented for criminal and international lega=
+l proceedings.</div><div><br></div><div>Confirmation of life and safety is =
+required immediately.</div><div><br></div><div>Date: 09.09.2026</div>
+
+--000000000000acd19c065d5fe877--
